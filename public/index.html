@@ -42,3 +42,100 @@
     -->
   </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="webpage.css" rel ="stylesheet"/>
+
+
+<style>
+body{    
+    font-family: "Work Sans", sans-serif;
+    font-style: normal;
+}
+.sidenav {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F4C792;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.sidenav a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    color: #181717;
+    display: block;
+}
+
+.sidenav a:hover{
+    color: #3e885b;
+}
+
+.main{
+    margin-left: 260px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.btn-group .button {
+    background-color: #E9E3E3;
+    color: #181717;
+    padding: 15px 53px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 280px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    border-color: #E9E3E3;
+    margin-top: 20px;
+}
+
+.btn-group.button:not(:last-child){
+    border-right: none;
+}
+
+.btn-group.button:hover{
+    background-color: #3e885b;
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#home">Home</a>
+</div>
+
+<div class="main">
+</div>
+
+<div class="btn-group">
+    <button class="button">MONTH</button>
+    <button class="button">WEEK</button>
+
+</div>
+    
+</body>
+</html>
